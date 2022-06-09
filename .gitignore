@@ -60,3 +60,5 @@ deployment/spark/aide-pipeline-spark-deployer-crc.yaml
 scripts/dockerconfig.sh
 deployment/tekton/resources/regcred.yaml
 .vscode/settings.json
+
+.repos.txt
