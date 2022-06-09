@@ -1,4 +1,3 @@
-// Databricks notebook source
 import scala.util.Random._
 import org.apache.spark.sql._
 import org.apache.spark.Partition
@@ -27,5 +26,4 @@ mydf
   .drop('col)
   .show()
 
-// COMMAND ----------
 mydf.printSchema()
