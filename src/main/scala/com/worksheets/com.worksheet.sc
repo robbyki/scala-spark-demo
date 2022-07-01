@@ -5,7 +5,7 @@ import org.apache.spark.sql.functions._
 
 val spark = SparkSession.builder
   .appName("SparkSQL")
-  .master("local[4]") //only for local mode
+  .master("local[4]") // only for local mode
   .getOrCreate()
 
 import spark.implicits._
