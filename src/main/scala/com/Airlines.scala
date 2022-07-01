@@ -148,15 +148,14 @@ object Airlines {
         "maxMalformedLogPerPartition" -> "10",
         "mode"                        -> "PERMISSIVE"
       )
-      try
-        schema
-          .map(_ => dataFromSchema(schema))
-          .orElse(Some(spark.read))
-          .map(
-            _.format("csv")
-              .options(buildOptionsMap(delim, hasHeader, inferSchema, encoding))
-              .load(path: _*)
-          )
+      try schema
+        .map(_ => dataFromSchema(schema))
+        .orElse(Some(spark.read))
+        .map(
+          _.format("csv")
+            .options(buildOptionsMap(delim, hasHeader, inferSchema, encoding))
+            .load(path: _*)
+        )
       catch {
         case e: Exception =>
           e.printStackTrace()
