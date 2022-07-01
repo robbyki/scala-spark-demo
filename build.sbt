@@ -13,7 +13,7 @@ libraryDependencies ++= Seq(
   "com.amazonaws"     % "aws-java-sdk"   % "1.11.375",
   "org.apache.hadoop" % "hadoop-common"  % "3.2.0",
   "org.apache.hadoop" % "hadoop-aws"     % "3.2.0",
-  "com.databricks"    % "spark-xml_2.12" % "0.14.0"
+  "com.databricks"    % "spark-xml_2.12" % "0.15.0"
   /* "org.apache.hadoop" % "hadoop-client" % "3.2.0", */
   /* "com.google.guava"  % "guava"         % "31.1-jre" */
   /* "com.fasterxml.jackson.core"    % "jackson-databind"     % "2.12.2", */
