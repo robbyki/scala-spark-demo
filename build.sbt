@@ -1,6 +1,6 @@
 import sbtassembly.AssemblyPlugin.autoImport.{assemblyMergeStrategy, assemblyOption}
 
-scalaVersion := "2.12.14"
+scalaVersion := "2.12.16"
 
 /* assembly / mainClass := Some("com.AppDemo") */
 
