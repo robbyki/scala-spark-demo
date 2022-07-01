@@ -5,9 +5,9 @@ scalaVersion := "2.12.14"
 /* assembly / mainClass := Some("com.AppDemo") */
 
 libraryDependencies ++= Seq(
-  "org.apache.spark" %% "spark-core"     % "3.2.1",
-  "org.apache.spark" %% "spark-sql"      % "3.2.1",
-  "org.apache.spark" %% "spark-mllib"    % "3.2.1",
+  "org.apache.spark" %% "spark-core"     % "3.3.0",
+  "org.apache.spark" %% "spark-sql"      % "3.3.0",
+  "org.apache.spark" %% "spark-mllib"    % "3.3.0",
   "org.scalactic"    %% "scalactic"      % "3.1.4",
   "org.scalatest"    %% "scalatest"      % "3.1.4" % Test,
   "com.amazonaws"     % "aws-java-sdk"   % "1.11.375",
