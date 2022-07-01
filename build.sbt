@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-sql"      % "3.2.1",
   "org.apache.spark" %% "spark-mllib"    % "3.2.1",
   "org.scalactic"    %% "scalactic"      % "3.1.4",
-  "org.scalatest"    %% "scalatest"      % "3.1.4" % Test,
+  "org.scalatest"    %% "scalatest"      % "3.2.12" % Test,
   "com.amazonaws"     % "aws-java-sdk"   % "1.11.375",
   "org.apache.hadoop" % "hadoop-common"  % "3.2.0",
   "org.apache.hadoop" % "hadoop-aws"     % "3.2.0",
