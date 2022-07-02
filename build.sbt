@@ -1,18 +1,18 @@
 import sbtassembly.AssemblyPlugin.autoImport.{assemblyMergeStrategy, assemblyOption}
 
-scalaVersion := "2.12.14"
+scalaVersion := "2.12.16"
 
 /* assembly / mainClass := Some("com.AppDemo") */
 
 libraryDependencies ++= Seq(
-  "org.apache.spark" %% "spark-core"     % "3.2.1",
-  "org.apache.spark" %% "spark-sql"      % "3.2.1",
-  "org.apache.spark" %% "spark-mllib"    % "3.2.1",
+  "org.apache.spark" %% "spark-core"     % "3.3.0",
+  "org.apache.spark" %% "spark-sql"      % "3.3.0",
+  "org.apache.spark" %% "spark-mllib"    % "3.3.0",
   "org.scalactic"    %% "scalactic"      % "3.1.4",
-  "org.scalatest"    %% "scalatest"      % "3.1.4" % Test,
-  "com.amazonaws"     % "aws-java-sdk"   % "1.11.1034",
-  "org.apache.hadoop" % "hadoop-common"  % "3.2.0",
-  "org.apache.hadoop" % "hadoop-aws"     % "3.2.0",
+  "org.scalatest"    %% "scalatest"      % "3.2.12" % Test,
+  "com.amazonaws"     % "aws-java-sdk"   % "1.11.375",
+  "org.apache.hadoop" % "hadoop-common"  % "3.2.3",
+  "org.apache.hadoop" % "hadoop-aws"     % "3.2.3",
   "com.databricks"    % "spark-xml_2.12" % "0.14.0"
   /* "org.apache.hadoop" % "hadoop-client" % "3.2.0", */
   /* "com.google.guava"  % "guava"         % "31.1-jre" */

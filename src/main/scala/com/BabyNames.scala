@@ -107,9 +107,9 @@ object BabyNames {
     // val babyNamesFile: String = "s3a://datasets-rk/babynames/babyname-small.json"
     val babyNamesFile: String = "s3a://datasets-rk/babynames/babyname-full.json"
 
-    //------------------------------------------------------------------//
+    // ------------------------------------------------------------------//
     //                  Part 1 Without Any XML Parsing                  //
-    //------------------------------------------------------------------//
+    // ------------------------------------------------------------------//
 
     /**
      * Q1: Baby Names Question 1 - Nested Data [15 Points] Use Spark SQL's native JSON support to
@@ -560,9 +560,9 @@ object BabyNames {
     }
     mostCommonAgeVisits(initBabyNameXML(getBabyVisitJsonXML(babyVisitFile))).show(false)
 
-    //------------------------------------------------------------------//
+    // ------------------------------------------------------------------//
     //           Appendix for things I was curious to try out           //
-    //------------------------------------------------------------------//
+    // ------------------------------------------------------------------//
     def addAgeCols(df: DataFrame): DataFrame = {
       val numCols = df
         .withColumn("_num_visitors", size($"birth_visits"))
