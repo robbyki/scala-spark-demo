@@ -1,6 +1,6 @@
 import sbtassembly.AssemblyPlugin.autoImport.{assemblyMergeStrategy, assemblyOption}
 
-scalaVersion := "2.12.16"
+scalaVersion := "2.13.8"
 
 /* assembly / mainClass := Some("com.AppDemo") */
 
@@ -11,8 +11,8 @@ libraryDependencies ++= Seq(
   "org.scalactic"    %% "scalactic"      % "3.1.4",
   "org.scalatest"    %% "scalatest"      % "3.2.12" % Test,
   "com.amazonaws"     % "aws-java-sdk"   % "1.11.375",
-  "org.apache.hadoop" % "hadoop-common"  % "3.3.3",
-  "org.apache.hadoop" % "hadoop-aws"     % "3.3.3",
+  "org.apache.hadoop" % "hadoop-common"  % "3.2.4",
+  "org.apache.hadoop" % "hadoop-aws"     % "3.2.4",
   "com.databricks"    % "spark-xml_2.12" % "0.14.0"
   /* "org.apache.hadoop" % "hadoop-client" % "3.2.0", */
   /* "com.google.guava"  % "guava"         % "31.1-jre" */
